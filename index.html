@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyAt_JSi3TpI4oehGGnRBIynz2BUsFPgkZ4",
+          authDomain: "user-authent.firebaseapp.com",
+          projectId: "user-authent",
+          storageBucket: "user-authent.appspot.com",
+          messagingSenderId: "534639436941",
+          appId: "1:534639436941:web:f75ee9ef920de8fd3beec4",
+          measurementId: "G-FK2JZKZY6D"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
+</head>
+<body>
+    <div class="form"> 
+        <input type="email"  id="email" placeholder="Email">
+        <br>
+        <input type="password" id="password" placeholder="Password">
+        <br>
+        <button onclick="signup()">SignUp</button>
+    </div>
+
+    <div class="form"> 
+        <input type="email"  id="login-email" placeholder="Email">
+        <br>
+        <input type="password" id="login-password" placeholder="Password">
+        <br>
+        <button onclick="login()">Login</button>
+    </div>
+        
+    <button onclick="facebook_login()">Facebook Login</button>
+        <script src="app.js"></script>
+</body>
+</html>
